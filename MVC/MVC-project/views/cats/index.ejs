@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+</head>
+
+<body>
+    <h1>All cats</h1>
+    <table>
+        <% if(cats.lenght==0){ %>
+            <h3>No existe la raza que pides</h3>
+          <% } else { %>  
+            <thead>
+                <tr>
+                    <th>Name</td>
+                    <th>Race</td>
+                </tr>
+            </thead>
+            <% cats.forEach((cat)=> { %>
+            <tr>
+                <td><%= cat.name %></td>
+                <td><%= cat.race %></td>
+            </tr>
+            <% }); %>
+            </table>
+            
+            <a href="/cats/add-cat"><button>Add a new cat</button></a>
+        <% } %>
+</body>
+<style>
+    body{
+        margin: 5rem;
+    }
+    a{
+        color:white;
+    }
+</style>
+
+</html>
