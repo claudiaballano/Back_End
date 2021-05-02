@@ -1,0 +1,23 @@
+{
+  "name": "practicadni_students---student",
+  "version": "1.0.0",
+  "description": "Trabajamos en el departamento de interior, comprobando la autenticidad de ciertos DNIs que nos pasan a través de una base de datos externa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omiras/practicaDNI_Students---student.git"
+  },
+  "author": "Claudia Ballano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omiras/practicaDNI_Students---student/issues"
+  },
+  "homepage": "https://github.com/omiras/practicaDNI_Students---student#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
