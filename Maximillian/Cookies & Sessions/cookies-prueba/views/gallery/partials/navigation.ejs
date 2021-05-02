@@ -1,0 +1,52 @@
+<nav class="navbar">
+    <ul>
+        <li><a  href="/gallery">Mostrar imágenes</a></li>
+        <li><a  href="/gallery/add-photo">Añadir imágenes</a></li>
+        <li><a  href="/login">Login</a></li>
+    </ul>
+</nav>
+
+
+<style>
+    .navbar {
+        margin-bottom: 6rem;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .navbar li {
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .navbar li a {
+        display: block;
+        text-align: center;
+        padding: 0rem 1.2rem;
+        text-decoration: none;
+        color: black
+
+    }
+
+    .navbar li a:hover {
+        color: #ab5dda
+    }
+    .active {
+        color: #d5a8f1 !important
+    }
+
+</style>
+<script>
+
+if(window.location.href=='http://localhost:3000/gallery'){
+document.querySelectorAll('a')[0].classList.add('active')
+}
+else if(window.location.href=='http://localhost:3000/gallery/add-photo' ){
+document.querySelectorAll('a')[1].classList.add('active')
+}
+</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head'); %>
+</head>
+
+<body>
+    
+    <%- include('./partials/navigation'); %>
+    <header>
+    <%- include('./partials/header'); %>
+    </header>
+    <form action='/gallery/edit' method="POST">
+        <div class="margin">
+            <h4>Editar imagen</h1>
+                <label for="titulo">Titulo:</label>
+                <input type="text" id="titulo" name="titulo" maxlength="10" value="<%= photo.titulo%>">
+                <label for="fecha_creacion">Fecha:</label>
+                <input type="date" id="fecha_creacion" name="fecha_creacion" value="<%=photo.fecha_creacion%>">
+                <input type="submit" value="submit">
+        </div>
+    </form>
+
+</body>
+<style>
+    
+    body {
+        margin: 2rem 4rem
+    }
+    form {
+        border: #ab5dda solid 1px;
+        border-radius: 10px;
+        max-width: 50%;
+        margin:auto
+        
+    }
+    .margin {
+        margin: 2rem;
+    }
+
+    
+</style>
+
+</html>
